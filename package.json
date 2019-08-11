@@ -1,0 +1,19 @@
+{
+  "name": "ebook",
+  "version": "1.0.0",
+  "description": "### Developer Instructions 1. Install Stylus `npm install stylus -g` 2. Have Stylus automatically pickup changes `stylus --watch css`",
+  "main": "app.js",
+  "dependencies": {
+    "aws-sdk": "^2.501.0",
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "s3": "^4.4.0",
+    "stylus": "^0.54.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "drf",
+  "license": "ISC"
+}

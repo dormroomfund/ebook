@@ -1,0 +1,176 @@
+@font-face {
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/CircularStd-Medium.otf");
+}
+@font-face {
+  font-family: CircularStd;
+  font-weight: 600;
+  font-style: normal;
+  src: url("./fonts/CircularStd-Bold.otf");
+}
+@font-face {
+  font-family: CircularStd;
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/CircularStd-Black.otf");
+}
+@font-face {
+  font-family: CircularStd;
+  font-weight: 300;
+  font-style: normal;
+  src: url("./fonts/CircularStd-Book.otf");
+}
+html {
+  margin: 0 auto;
+  max-width: 1500px;
+  font-family: CircularStd;
+}
+
+body {
+  margin: 0;
+  background-color: #FEE606
+}
+@media (max-width: 479px) {
+  body .logo {
+    margin-top: 0px;
+  }
+  body .page-title {
+    margin-top: 30px;
+  }
+  body .page-title .page-subtitle {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+}
+
+.content {
+  margin: 0 5%;
+  position: relative;
+}
+
+@media (max-width: 1025px) {
+  .content {
+    margin: 0 54.5px;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    margin: 0 24.5px;
+  }
+}
+@media (max-width: 479px) {
+  .content {
+    margin: 0 14.5px;
+  }
+}
+
+#header{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#email-form{
+  box-shadow: 0px 3px 6px rgba(0,0,0, .15), 0px 1.5px 3px rgba(0,0,0, .40);
+  border: none;
+  border-radius: 5px;
+  padding: 1.2% 2% 1.1% 2%;
+  color: black;
+  font-size: 1.05rem;
+  font-family: CircularStd;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  max-height: 50px;
+  margin-right: 10px;
+  width: 30%
+}
+
+@media (max-width: 767px) {
+  #email-form {
+    padding: 2% 7.5% 1.9% 7.5%;
+  }
+}
+
+#email-form:hover{
+  box-shadow: 0px 1px 3px rgba(0,0,0, .1), 0px .5px 2px rgba(0,0,0, .20);
+}
+
+#applybutton{
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px rgba(0,0,0, .15), 0px 1.5px 3px rgba(0,0,0, .40);
+  padding: 1.2% 5% 1.1% 5%;
+  color: white;
+  font-size: 1.05rem;
+  font-family: CircularStd;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  max-height: 50px;
+  outline: none;
+}
+
+@media (max-width: 767px) {
+  #applybutton {
+    padding: 2% 7.5% 1.9% 7.5%;
+  }
+}
+
+#applybutton:hover{
+  box-shadow: 0px 1px 3px rgba(0,0,0, .1), 0px .5px 2px rgba(0,0,0, .20);
+}
+
+#headericons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_logo{
+  height: 50px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+.page-title {
+  margin-top: 50px;
+  max-width: 895px;
+  right: 65%;
+}
+.page-title h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 54.3px;
+}
+.page-title .page-subtitle {
+  line-height: 1.4;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.page-title .subtext {
+  color: gray;
+  font-weight: normal
+}
+
+.picture {
+  /* width: 25%; */
+  margin-right: 5%;
+  right: 25%;
+  bottom: 73%;
+  position: absolute;
+}
+
+.picture .pic-container {
+  max-width: 100%;
+  position: absolute;
+}
+
+.picture .pic-container img {
+  max-width: 300px;
+  max-height: 388px;
+}
