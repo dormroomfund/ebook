@@ -73,6 +73,84 @@ body {
   justify-content: space-between;
 }
 
+#headericons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small_logo{
+  height: 50px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+/* Homepage content (includes page title and picure) */
+
+.homepage-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  margin-top: 50px;
+  max-width: 70%;
+}
+
+
+.page-title h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 54.3px;
+}
+.page-title .page-subtitle {
+  line-height: 1.4;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.page-title .subtext {
+  color: gray;
+  font-weight: normal
+}
+
+.picture {
+  width: 25%; 
+  margin-right: 5%;
+  margin-top: 5%;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .page-title {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .picture {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.picture .pic-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.picture .pic-container img {
+  width: 100%;
+  box-shadow: 2px 2px 10px #000;
+}
+
+/* Email Capture Tag */
+.email-capture {
+  width: 100%;
+}
+
 #email-form{
   box-shadow: 0px 3px 6px rgba(0,0,0, .15), 0px 1.5px 3px rgba(0,0,0, .40);
   border: none;
@@ -89,14 +167,14 @@ body {
   width: 30%
 }
 
+#email-form:hover{
+  box-shadow: 0px 1px 3px rgba(0,0,0, .1), 0px .5px 2px rgba(0,0,0, .20);
+}
+
 @media (max-width: 767px) {
   #email-form {
     padding: 2% 7.5% 1.9% 7.5%;
   }
-}
-
-#email-form:hover{
-  box-shadow: 0px 1px 3px rgba(0,0,0, .1), 0px .5px 2px rgba(0,0,0, .20);
 }
 
 #applybutton{
@@ -125,52 +203,3 @@ body {
   box-shadow: 0px 1px 3px rgba(0,0,0, .1), 0px .5px 2px rgba(0,0,0, .20);
 }
 
-#headericons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.small_logo{
-  height: 50px;
-  margin-right: 25px;
-  margin-top: 25px;
-}
-.page-title {
-  margin-top: 50px;
-  max-width: 895px;
-  right: 65%;
-}
-.page-title h1 {
-  margin: 0;
-  margin-bottom: 10px;
-  font-size: 54.3px;
-}
-.page-title .page-subtitle {
-  line-height: 1.4;
-  font-size: 30px;
-  font-weight: 300;
-}
-
-.page-title .subtext {
-  color: gray;
-  font-weight: normal
-}
-
-.picture {
-  /* width: 25%; */
-  margin-right: 5%;
-  right: 25%;
-  bottom: 73%;
-  position: absolute;
-}
-
-.picture .pic-container {
-  max-width: 100%;
-  position: absolute;
-}
-
-.picture .pic-container img {
-  max-width: 300px;
-  max-height: 388px;
-}
