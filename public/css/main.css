@@ -50,8 +50,9 @@ h1{
 }
 
 h2{
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
+  margin: 2.5% 0%;
 }
 
 @media (max-width: 1025px){
@@ -60,7 +61,7 @@ h2{
   }
 
   h2{
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -71,7 +72,7 @@ h2{
   }
 
   h2{
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -147,8 +148,7 @@ h2{
   max-width: 65%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 50px 0px;
 }
 
@@ -210,12 +210,21 @@ h2{
 /* Email Capture Tag */
 .email-capture {
   width: 100%;
+  margin-top: 7.5%;
+}
+
+.email-capture2{
+  display: none;
 }
 
 @media (max-width: 500px){
   .email-capture{
+    display: none;
+  }
+  .email-capture2{
+    display: inline-block;
     width: 100%;
-    padding: 2% 5% 10% 5%;
+    padding: 2% 10% 10% 10%;
   }
 }
 
@@ -240,15 +249,21 @@ h2{
   box-shadow: 0px 1px 3px rgba(0,0,0, .1), 0px .5px 2px rgba(0,0,0, .20);
 }
 
+@media (max-width: 1100px) {
+  #email-form {
+    padding: 2% 15% 1.9% 7.5%;
+  }
+}
+
 @media (max-width: 767px) {
   #email-form {
-    padding: 2% 7.5% 1.9% 7.5%;
+    padding: 2% 17.5% 1.9% 7.5%;
   }
 }
 
 @media (max-width: 500px) {
   #email-form {
-    padding: 2% 25% 1.9% 7.5%;
+    padding: 2% 20% 1.9% 7.5%;
   }
 }
 
