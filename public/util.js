@@ -11,7 +11,7 @@ var submitForm = function() {
     r.onreadystatechange = function () {
         if (r.readyState != 4 || r.status != 200) return;
         form.elements[0].value = ""
-        window.open("NonTech_july.pdf");
+        window.open("drf_nontech_guide_volumeI.pdf");
     };
     r.setRequestHeader('Content-Type', 'application/json');
     r.send(JSON.stringify(data));
